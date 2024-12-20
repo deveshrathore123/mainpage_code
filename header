@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light only">
+  <meta name="description" content="KubeEdge - Unlock Hosting at the EDGE">
+  <title>KubeEdge</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #242426;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Title and tagline */
+    .header-title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .header-tagline {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    /* Navigation Menu */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Button Style for Dashboard */
+    .dashboard-btn {
+      background-color: #f39c12;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .dashboard-btn:hover {
+      background-color: #e67e22;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div>
+      <div class="header-title">KubeEdge</div>
+      <div class="header-tagline">Unlock Hosting at the EDGE</div>
+    </div>
+    
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#customers">Customers</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#docs">Docs</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Dashboard as Button -->
+        <li><a href="#dashboard" class="dashboard-btn">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
