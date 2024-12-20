@@ -1322,7 +1322,8 @@ body:after {
                   <div class="wrapper">
                      
                         <div>
-                    <head>
+               <html lang="en">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light only">
@@ -1334,28 +1335,39 @@ body:after {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
 
     /* Header Styling */
     header {
-      background-color: #242426;
-      color: white;
+      background-color: #000000; /* Black background */
+      color: #FFFFFF; /* White text color */
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    /* Title and tagline */
+    /* Title and tagline with custom font style */
     .header-title {
-      font-size: 32px;
-      font-weight: bold;
+      font-family: 'Gloock', serif; /* Use Gloock font */
+      font-size: 3em;
+      font-weight: 400;
+      letter-spacing: 0.35rem;
+      text-indent: 1.125rem;
+      line-height: 1.375;
+      color: #FFFFFF; /* White color for text */
+      width: calc(100% + 0.35rem);
     }
 
     .header-tagline {
-      font-size: 16px;
-      color: #ccc;
+      font-family: 'Gloock', serif;
+      font-size: 1.25em;
+      font-weight: 400;
+      letter-spacing: 0.35rem;
+      text-indent: 1.125rem;
+      line-height: 1.375;
+      color: #FFFFFF;
+      width: calc(100% + 0.35rem);
     }
 
     /* Navigation Menu */
@@ -1379,22 +1391,6 @@ body:after {
 
     nav ul li a:hover {
       color: #f39c12;
-    }
-
-    /* Button Style for Dashboard */
-    .dashboard-btn {
-      background-color: #f39c12;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-
-    .dashboard-btn:hover {
-      background-color: #e67e22;
     }
 
     /* Responsive Design */
@@ -1438,8 +1434,11 @@ body:after {
       </ul>
     </nav>
   </header>
-                     </div>
-                  </div>
+
+</body>
+</html>
+
+             
                </div>
                <ul id="buttons01" class="style1 buttons">
                   <li><a href="https://starthosting.carrd.co/" class="button n01" role="button">Start Hosting</a></li>
