@@ -1,122 +1,190 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light only">
   <meta name="description" content="KubeEdge - Unlock Hosting at the EDGE">
   <title>KubeEdge</title>
-
+  
+  <!-- Inline Styles (CSS) -->
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+    /* Provided styles */
+    h1.style1,
+    h2.style1,
+    h3.style1,
+    p.style1 {
+      color: #FFFFFF;
+      font-family: 'Gloock', serif;
+      padding-left: calc(0.125rem * var(--indent-left));
+      padding-right: calc(0.125rem * var(--indent-right));
+      text-indent: 1rem;
+      letter-spacing: 0.725rem;
+      width: calc(100% + 0.725rem);
+      font-size: 2.75em;
+      line-height: 1;
+      font-weight: 400;
     }
 
-    /* Header Styling */
-    header {
-      background-color: #242426;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
+    h1.style1 a,
+    h2.style1 a,
+    h3.style1 a,
+    p.style1 a {
+      text-decoration: underline;
+    }
+
+    h1.style1 a:hover,
+    h2.style1 a:hover,
+    h3.style1 a:hover,
+    p.style1 a:hover {
+      text-decoration: none;
+    }
+
+    h1.style1 span.p:nth-child(n + 2),
+    h2.style1 span.p:nth-child(n + 2),
+    h3.style1 span.p:nth-child(n + 2),
+    p.style1 span.p:nth-child(n + 2) {
+      margin-top: 1rem;
+    }
+
+    h1.style3,
+    h2.style3,
+    h3.style3,
+    p.style3 {
+      color: #FFFFFF;
+      font-family: 'Gloock', serif;
+      text-indent: 1.125rem;
+      letter-spacing: 0.35rem;
+      width: calc(100% + 0.35rem);
+      font-size: 1.25em;
+      line-height: 1.375;
+      font-weight: 400;
+    }
+
+    h1.style3 a,
+    h2.style3 a,
+    h3.style3 a,
+    p.style3 a {
+      text-decoration: underline;
+    }
+
+    h1.style3 a:hover,
+    h2.style3 a:hover,
+    h3.style3 a:hover,
+    p.style3 a:hover {
+      text-decoration: none;
+    }
+
+    h1.style3 span.p:nth-child(n + 2),
+    h2.style3 span.p:nth-child(n + 2),
+    h3.style3 span.p:nth-child(n + 2),
+    p.style3 span.p:nth-child(n + 2) {
+      margin-top: 1rem;
+    }
+
+    hr {
       align-items: center;
+      border: 0;
+      display: flex;
+      justify-content: var(--flex-alignment);
+      min-height: 1rem;
+      padding: 0;
+      position: relative;
+      width: 100%;
     }
 
-    /* Title and tagline */
+    hr:before {
+      content: '';
+    }
+
+    hr.style1:not(:first-child) {
+      margin-top: 0.875rem !important;
+    }
+
+    hr.style1:not(:last-child) {
+      margin-bottom: 0.875rem !important;
+    }
+
+    hr.style1:before {
+      width: 73rem;
+      height: 1rem;
+      background-size: auto 30.1%;
+      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%3E%3Cstyle%3Eline%20%7Bstroke-linecap%3A%20square%3Bstroke-width%3A%2012px%3Bstroke%3A%20rgba(0,0,0,0.451)%3Bvector-effect%3A%20non-scaling-stroke%3B%7D%3C%2Fstyle%3E%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%22512%22%20y2%3D%22256%22%20%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22256%22%20x2%3D%22256%22%20y2%3D%22512%22%20%2F%3E%3C%2Fsvg%3E');
+      background-position: center center;
+      background-repeat: repeat-x;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
     .header-title {
-      font-size: 32px;
+      font-size: 3em;
       font-weight: bold;
     }
 
     .header-tagline {
-      font-size: 16px;
-      color: #ccc;
+      font-size: 1.25em;
+      font-weight: 400;
     }
 
-    /* Navigation Menu */
     nav ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
-      margin: 0;
-      display: flex;
     }
 
     nav ul li {
+      display: inline;
       margin: 0 15px;
     }
 
     nav ul li a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      font-size: 16px;
-      transition: color 0.3s;
+      font-size: 1.2em;
     }
 
     nav ul li a:hover {
-      color: #f39c12;
-    }
-
-    /* Button Style for Dashboard */
-    .dashboard-btn {
-      background-color: #f39c12;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-
-    .dashboard-btn:hover {
-      background-color: #e67e22;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav ul {
-        flex-direction: column;
-        margin-top: 20px;
-      }
-
-      nav ul li {
-        margin-bottom: 10px;
-      }
+      text-decoration: underline;
     }
   </style>
 </head>
-<body>
-
-  <!-- Header Section -->
-  <header>
-    <div>
-      <div class="header-title">KubeEdge</div>
-      <div class="header-tagline">Unlock Hosting at the EDGE</div>
+<body class="is-loading">
+  <div id="wrapper">
+    <div id="main">
+      <div class="inner">
+        <div id="container01" class="container columns full">
+          <div class="wrapper">
+            <!-- Header Section -->
+            <header>
+              <div>
+                <div class="header-title">KubeEdge</div>
+                <div class="header-tagline">Unlock Hosting at the EDGE</div>
+              </div>
+              
+              <!-- Navigation Menu -->
+              <nav>
+                <ul>
+                  <li><a href="#pricing">Pricing</a></li>
+                  <li><a href="#customers">Customers</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#docs">Docs</a></li>
+                  <li><a href="#changelog">Changelog</a></li>
+                  <li><a href="#careers">Careers</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </header>
+            <!-- End of Header Section -->
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <!-- Navigation Menu -->
-    <nav>
-      <ul>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#customers">Customers</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#docs">Docs</a></li>
-        <li><a href="#changelog">Changelog</a></li>
-        <li><a href="#careers">Careers</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- Dashboard as Button -->
-        <li><a href="#dashboard" class="dashboard-btn">Dashboard</a></li>
-      </ul>
-    </nav>
-  </header>
-
- 
+  </div>
+</body>
+</html>
